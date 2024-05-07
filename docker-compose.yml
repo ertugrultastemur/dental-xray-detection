@@ -9,8 +9,8 @@ services:
       - "8080:8080"
     hostname: dental_detection
     volumes:
-      - /home/ertugrul/DentalDetection/dental-xray-detection/src/Log:/home/src/Log
+      - /home/ikbal/Projects/dental-xray-detection/src/Log:/home/src/Log
     command: sh -c "python Service.py"
     build:
-      context: /home/ertugrul/DentalDetection/dental-xray-detection/src/
+      context: /home/ikbal/Projects/dental-xray-detection/src/
       dockerfile: Dockerfile
