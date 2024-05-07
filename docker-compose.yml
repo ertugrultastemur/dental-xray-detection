@@ -1,0 +1,16 @@
+version: "3.5"
+
+services:
+
+  dentaldetection:
+    container_name: dental_detection_container
+    image: dental_detection_container_image
+    ports:
+      - "8080:8080"
+    hostname: dental_detection
+    volumes:
+      - /home/ertugrul/DentalDetection/dental-xray-detection/src/Log:/home/src/Log
+    command: sh -c "python Service.py"
+    build:
+      context: /home/ertugrul/DentalDetection/dental-xray-detection/src/
+      dockerfile: Dockerfile
