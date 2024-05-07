@@ -1,3 +1,4 @@
 log4p~=2019.7.13.3
 Flask~=3.0.3
 opencv-python~=4.9.0.80
+ultralytics~=8.2.8
