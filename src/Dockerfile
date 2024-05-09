@@ -7,7 +7,7 @@ COPY . /home/src
 WORKDIR /home/src
 
 # Expose port
-EXPOSE 8081
+EXPOSE 8502
 
 # Pip upgrade and install
 RUN pip install --upgrade pip

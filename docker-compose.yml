@@ -6,7 +6,7 @@ services:
     container_name: dental_detection_container
     image: dental_detection_container_image
     ports:
-      - "8081:8081"
+      - "8502:8502"
     hostname: dental_detection
     volumes:
       - /home/ikbal/Projects/dental-xray-detection/src/Log:/home/src/Log
