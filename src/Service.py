@@ -22,11 +22,12 @@ def predict():
     data = request.json
 
     image = data['image']
+    logger.info("Image received successfully")
 
     # predict
     base64_image = predict_image(image, model)
 
-
+    logger.info("Image prediction completed successfully")
     return jsonify({'image': base64_image})
 
 

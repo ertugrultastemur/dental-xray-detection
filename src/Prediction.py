@@ -9,6 +9,10 @@ from PIL import Image
 import io
 import base64
 
+import log4p
+
+loggerApp = log4p.GetLogger("App", config='Config/log4p.json')
+logger = loggerApp.logger
 
 def predict_image(base64_image, model):
     # decode base64 image
@@ -16,6 +20,7 @@ def predict_image(base64_image, model):
 
     # detect
     results = model(image)
+    logger.info("Image detected successfully")
 
     # output detected image
     img = cv2.cvtColor(np.array(image), cv2.COLOR_BGR2RGB)
