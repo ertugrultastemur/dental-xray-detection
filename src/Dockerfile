@@ -9,6 +9,7 @@ WORKDIR /home/src
 # Expose port
 EXPOSE 8502
 
+
 # Pip upgrade and install
 RUN pip install --upgrade pip
 RUN pip3 install --upgrade pip
